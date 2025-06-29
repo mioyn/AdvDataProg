@@ -1,0 +1,81 @@
+# install and load packages
+install.packages("Devore7") 
+library(Devore7)
+
+str(UScrime)
+gdp <- UScrime$GDP
+
+# for continuous bins(5), length=no of bins required plus one
+points <- seq(from=250, to=700, length=(5+1))  
+hist(gdp, breaks = points)
+
+# Another 
+abs_freq <- table(x) # discrete or categorical
+abs_freq <- hist(gdp, breaks = points)$counts  # continuous
+rel_freq <- prop.table(abs_freq)
+rel_freq <- round(rel_freq, 3)
+
+# Another
+rel_freq <- abs_freq/length(gdp)
+
+freq_table <- data.frame(
+  Absolute_Frequency = as.vector(abs_freq),
+  Relative_Frequency = round(as.vector(rel_freq), 3),
+  Cumulative_Frequency = as.vector(cum_freq)
+)
+freq_table
+
+
+mean(gdp)
+median(gdp)
+# quantile of 40%
+quantile(gdp, 0.4)
+# Interquartile Range 
+IQR(x)
+var(gdp)
+sd(gdp)
+# Coefficient of Variation (CV)
+  CV = SD / Mean
+
+mean(x, na.rm = TRUE, trim = 0.05)
+
+exactly 5        ->  5
+morethan 5       ->  6, 7, 8, ...
+at least 5       ->  5, 6, 7, ...
+less than 5      ->  0, 1, 2, 3, 4
+not more than 5  ->  0, 1, 2, 3, 4, 5
+at most 5        ->  0, 1, 2, 3, 4, 5
+
+# Bar Plot using Relative Frequency
+barplot(rel_freq, main = "Main Label",
+        xlab = "x label", ylab = "y label",
+        col = "skyblue", ylim = c(0, max(rel_freq) + 0.05))
+
+# absolute cumulative frequencies and relative cumulative frequencies
+cumsum(abs_freq) 
+cumsum(rel_freq) 
+
+# ecdf plot
+plot(ecdf(x), main = "main label",
+     xlab = "x label", ylab = "y label",
+     verticals = T, do.points = F, col = "blue") 
+
+# Bayes’ Theorem / Conditional Probability:
+P(D|+) = P(D ∩ +) / P(+)
+
+TP | FP
+-------
+FN | TN
+
+# dbinom(x, size, prob) ; exactly 3 for size 10 prob 7%
+dbinom(3, 10, 0.07)
+dbinom(k, n, p)
+pbinom(k, n, p)
+mean = n*p
+# Upper tail
+pbinom(k, n, p, lower.tail=FALSE)
+
+#Poisson Distribution
+dpois(k, λ)
+ppois(k, λ)
+ppois(k, λ, lower.tail=FALSE)
