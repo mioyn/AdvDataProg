@@ -1,9 +1,9 @@
+
 <details>
 <summary>
-1. Q: What is machine learning, and how does it differ from traditional rule-based programming?
+1. What is machine learning, and how does it differ from traditional rule-based programming?
 </summary>
-1. Q: What is machine learning, and how does it differ from traditional rule-based programming?
-   A: Machine learning is a subset of artificial intelligence where algorithms learn patterns from data to make predictions or decisions. Unlike rule-based programming, which relies on explicitly programmed instructions, machine learning allows systems to adapt and improve based on experience.
+Machine learning is a subset of artificial intelligence where algorithms learn patterns from data to make predictions or decisions. Unlike rule-based programming, which relies on explicitly programmed instructions, machine learning allows systems to adapt and improve based on experience.
 
 ### 🔹 **Traditional Rule-Based Programming**
 
@@ -39,135 +39,143 @@ You train a model with thousands of emails labeled as *spam* or *not spam*. The 
 The system automatically adapts to new spam strategies by retraining with newer data—no need to rewrite the rules manually.
 </details>
 
+<details>
+<summary>
+2. How do supervised, unsupervised, and reinforcement learning paradigms differ?
+</summary>
+Supervised learning uses labeled data to train models; unsupervised learning finds hidden patterns in unlabeled data; reinforcement learning teaches agents to make decisions through rewards and punishments.
 
 
+### 🔹 **1. Supervised Learning**
 
-2. Q: How do supervised, unsupervised, and reinforcement learning paradigms differ?
-   A: Supervised learning uses labeled data to train models; unsupervised learning finds hidden patterns in unlabeled data; reinforcement learning teaches agents to make decisions through rewards and punishments.
+**Definition:**
+The algorithm learns from labeled data — that is, each input has a corresponding correct output.
 
+**Goal:**
+Learn a function that maps inputs to outputs accurately.
 
-   ### 🔹 **1. Supervised Learning**
+**Example:**
 
-   **Definition:**
-   The algorithm learns from labeled data — that is, each input has a corresponding correct output.
+* **Email Spam Detection**
 
-   **Goal:**
-   Learn a function that maps inputs to outputs accurately.
+  * **Input (features):** email content
+  * **Label (output):** spam or not spam
+  * The model is trained with many examples of emails labeled as spam or not spam.
 
-   **Example:**
+**Other Examples:**
 
-   * **Email Spam Detection**
+* Predicting house prices (input: square footage, location → output: price)
+* Diagnosing diseases from medical images
 
-     * **Input (features):** email content
-     * **Label (output):** spam or not spam
-     * The model is trained with many examples of emails labeled as spam or not spam.
+---
 
-   **Other Examples:**
+### 🔹 **2. Unsupervised Learning**
 
-   * Predicting house prices (input: square footage, location → output: price)
-   * Diagnosing diseases from medical images
+**Definition:**
+The algorithm learns patterns or structures from **unlabeled data** — there are no correct answers provided.
 
-   ---
+**Goal:**
+Discover hidden structure or groupings in data.
 
-   ### 🔹 **2. Unsupervised Learning**
+**Example:**
 
-   **Definition:**
-   The algorithm learns patterns or structures from **unlabeled data** — there are no correct answers provided.
+* **Customer Segmentation**
 
-   **Goal:**
-   Discover hidden structure or groupings in data.
+  * You have customer purchase data but no labels.
+  * The model clusters customers into segments based on behavior (e.g., frequent shoppers, bargain hunters).
 
-   **Example:**
+**Other Examples:**
 
-   * **Customer Segmentation**
+* Grouping similar news articles (topic clustering)
+* Reducing the dimensions of large datasets (e.g., PCA for visualization)
 
-     * You have customer purchase data but no labels.
-     * The model clusters customers into segments based on behavior (e.g., frequent shoppers, bargain hunters).
+---
 
-   **Other Examples:**
+### 🔹 **3. Reinforcement Learning**
 
-   * Grouping similar news articles (topic clustering)
-   * Reducing the dimensions of large datasets (e.g., PCA for visualization)
+**Definition:**
+An agent learns to make decisions by interacting with an environment. It receives **rewards or penalties** based on its actions.
 
-   ---
+**Goal:**
+Maximize cumulative reward over time.
 
-   ### 🔹 **3. Reinforcement Learning**
+**Example:**
 
-   **Definition:**
-   An agent learns to make decisions by interacting with an environment. It receives **rewards or penalties** based on its actions.
+* **Playing a Video Game**
 
-   **Goal:**
-   Maximize cumulative reward over time.
+  * The agent (player) makes moves (actions).
+  * If it wins a level → gets a reward.
+  * If it loses a life → gets a penalty.
+  * It learns which strategies lead to higher scores.
 
-   **Example:**
+**Other Examples:**
 
-   * **Playing a Video Game**
-
-     * The agent (player) makes moves (actions).
-     * If it wins a level → gets a reward.
-     * If it loses a life → gets a penalty.
-     * It learns which strategies lead to higher scores.
-
-   **Other Examples:**
-
-   * Teaching a robot to walk
-   * Self-driving cars learning to navigate safely
-   * Stock trading agents learning profitable strategies
+* Teaching a robot to walk
+* Self-driving cars learning to navigate safely
+* Stock trading agents learning profitable strategies
 
 
+</details>
+
+
+<details>
+<summary>
 3. Q: What distinguishes regression tasks from classification tasks?
-   A: Regression predicts continuous numerical values, while classification predicts discrete categories or labels.
+</summary>
+A: Regression predicts continuous numerical values, while classification predicts discrete categories or labels.
 
-   ### 🔹 **Regression vs. Classification**
+### 🔹 **Regression vs. Classification**
 
-   | Aspect               | **Regression**                   | **Classification**                            |
-   | -------------------- | -------------------------------- | --------------------------------------------- |
-   | **Output Type**      | Continuous numeric value         | Discrete class or category                    |
-   | **Goal**             | Predict *how much* or *how many* | Predict *which category* something belongs to |
-   | **Example Question** | "What will the house price be?"  | "Is this email spam or not?"                  |
+| Aspect               | **Regression**                   | **Classification**                            |
+| -------------------- | -------------------------------- | --------------------------------------------- |
+| **Output Type**      | Continuous numeric value         | Discrete class or category                    |
+| **Goal**             | Predict *how much* or *how many* | Predict *which category* something belongs to |
+| **Example Question** | "What will the house price be?"  | "Is this email spam or not?"                  |
 
-   ---
+---
 
-   ### 🔹 **Regression – Example**
+### 🔹 **Regression – Example**
 
-   **Task:** Predict house prices
+**Task:** Predict house prices
 
-   * **Input (features):** square footage, number of rooms, location
-   * **Output:** price in dollars (e.g., **\$250,000**, **\$305,500**)
-   * **Why Regression?** The output is a continuous value, not a fixed set of categories.
+* **Input (features):** square footage, number of rooms, location
+* **Output:** price in dollars (e.g., **\$250,000**, **\$305,500**)
+* **Why Regression?** The output is a continuous value, not a fixed set of categories.
 
-   🧠 Common algorithms used:
+🧠 Common algorithms used:
 
-   * Linear Regression
-   * Decision Trees (for regression)
-   * Random Forest Regressor
+* Linear Regression
+* Decision Trees (for regression)
+* Random Forest Regressor
 
-   ---
+---
 
-   ### 🔹 **Classification – Example**
+### 🔹 **Classification – Example**
 
-   **Task:** Email spam detection
+**Task:** Email spam detection
 
-   * **Input (features):** email content, sender, subject line
-   * **Output:** class label (e.g., **spam** or **not spam**)
-   * **Why Classification?** The output belongs to a fixed set of classes.
+* **Input (features):** email content, sender, subject line
+* **Output:** class label (e.g., **spam** or **not spam**)
+* **Why Classification?** The output belongs to a fixed set of classes.
 
-   🧠 Common algorithms used:
+🧠 Common algorithms used:
 
-   * Logistic Regression
-   * Decision Trees (for classification)
-   * Support Vector Machines (SVM)
+* Logistic Regression
+* Decision Trees (for classification)
+* Support Vector Machines (SVM)
 
-   ---
+---
 
-   ### 🔍 Quick Check:
+### 🔍 Quick Check:
 
-   | Question                                | Task Type      |
-   | --------------------------------------- | -------------- |
-   | Will this tumor be benign or malignant? | Classification |
-   | What will the temperature be tomorrow?  | Regression     |
-   | Is this photo of a cat or a dog?        | Classification |
-   | How many likes will this post get?      | Regression     |   
+| Question                                | Task Type      |
+| --------------------------------------- | -------------- |
+| Will this tumor be benign or malignant? | Classification |
+| What will the temperature be tomorrow?  | Regression     |
+| Is this photo of a cat or a dog?        | Classification |
+| How many likes will this post get?      | Regression     |   
+</details>
+
 
 
 4. Q: What roles do features and labels play in a supervised-learning pipeline?
