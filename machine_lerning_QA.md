@@ -3,7 +3,7 @@
 Installation
 </summary>
 
-## Installation
+## 1. Q: What is machine learning, and how does it differ from traditional rule-based programming?
 </details>
 
 
