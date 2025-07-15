@@ -1,3 +1,12 @@
+<details>
+<summary>
+Installation
+</summary>
+
+## Installation
+</details>
+
+
 1. Q: What is machine learning, and how does it differ from traditional rule-based programming?
    A: Machine learning is a subset of artificial intelligence where algorithms learn patterns from data to make predictions or decisions. Unlike rule-based programming, which relies on explicitly programmed instructions, machine learning allows systems to adapt and improve based on experience.
 
