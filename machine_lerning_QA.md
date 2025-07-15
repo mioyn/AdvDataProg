@@ -1,184 +1,185 @@
-
 <details>
 <summary>
-1. What is machine learning, and how does it differ from traditional rule-based programming?
+1. Q: What is machine learning, and how does it differ from traditional rule-based programming?
 </summary>
-Machine learning is a subset of artificial intelligence where algorithms learn patterns from data to make predictions or decisions. Unlike rule-based programming, which relies on explicitly programmed instructions, machine learning allows systems to adapt and improve based on experience.
 
-### 🔹 **Traditional Rule-Based Programming**
+   A: Machine learning is a subset of artificial intelligence where algorithms learn patterns from data to make predictions or decisions. Unlike rule-based programming, which relies on explicitly programmed instructions, machine learning allows systems to adapt and improve based on experience.
 
-The developer writes specific rules or logic for the system to follow.
+   ### 🔹 **Traditional Rule-Based Programming**
 
-**Example:**
-You want a program to label emails as spam or not spam.
+   The developer writes specific rules or logic for the system to follow.
 
-* **Rule-based approach:**
+   **Example:**
+   You want a program to label emails as spam or not spam.
 
-  * If the subject contains "WIN \$\$\$" → mark as spam
-  * If the email has more than 3 exclamation marks → mark as spam
-  * If the sender is in the contact list → mark as not spam
+   * **Rule-based approach:**
 
-**Problem:**
-This works for some cases but fails if spam emails are worded differently or the spam tactics evolve.
+     * If the subject contains "WIN \$\$\$" → mark as spam
+     * If the email has more than 3 exclamation marks → mark as spam
+     * If the sender is in the contact list → mark as not spam
 
----
+   **Problem:**
+   This works for some cases but fails if spam emails are worded differently or the spam tactics evolve.
 
-### 🔹 **Machine Learning Approach**
+   ---
 
-The system learns from labeled examples instead of using hard-coded rules.
+   ### 🔹 **Machine Learning Approach**
 
-**Example:**
-You train a model with thousands of emails labeled as *spam* or *not spam*. The algorithm learns patterns from the email content, sender, frequency of certain words, etc.
+   The system learns from labeled examples instead of using hard-coded rules.
 
-* After training, the model might detect:
+   **Example:**
+   You train a model with thousands of emails labeled as *spam* or *not spam*. The algorithm learns patterns from the email content, sender, frequency of certain words, etc.
 
-  * Emails with phrases like "free money," "urgent," or "click here" often are spam.
-  * Emails from certain domains are less likely to be spam.
+   * After training, the model might detect:
 
-**Benefit:**
-The system automatically adapts to new spam strategies by retraining with newer data—no need to rewrite the rules manually.
+     * Emails with phrases like "free money," "urgent," or "click here" often are spam.
+     * Emails from certain domains are less likely to be spam.
+
+   **Benefit:**
+   The system automatically adapts to new spam strategies by retraining with newer data—no need to rewrite the rules manually.
+
 </details>
-
 <details>
 <summary>
-2. How do supervised, unsupervised, and reinforcement learning paradigms differ?
+2. Q: How do supervised, unsupervised, and reinforcement learning paradigms differ?
 </summary>
-Supervised learning uses labeled data to train models; unsupervised learning finds hidden patterns in unlabeled data; reinforcement learning teaches agents to make decisions through rewards and punishments.
+
+   A: Supervised learning uses labeled data to train models; unsupervised learning finds hidden patterns in unlabeled data; reinforcement learning teaches agents to make decisions through rewards and punishments.
 
 
-### 🔹 **1. Supervised Learning**
+   ### 🔹 **1. Supervised Learning**
 
-**Definition:**
-The algorithm learns from labeled data — that is, each input has a corresponding correct output.
+   **Definition:**
+   The algorithm learns from labeled data — that is, each input has a corresponding correct output.
 
-**Goal:**
-Learn a function that maps inputs to outputs accurately.
+   **Goal:**
+   Learn a function that maps inputs to outputs accurately.
 
-**Example:**
+   **Example:**
 
-* **Email Spam Detection**
+   * **Email Spam Detection**
 
-  * **Input (features):** email content
-  * **Label (output):** spam or not spam
-  * The model is trained with many examples of emails labeled as spam or not spam.
+     * **Input (features):** email content
+     * **Label (output):** spam or not spam
+     * The model is trained with many examples of emails labeled as spam or not spam.
 
-**Other Examples:**
+   **Other Examples:**
 
-* Predicting house prices (input: square footage, location → output: price)
-* Diagnosing diseases from medical images
+   * Predicting house prices (input: square footage, location → output: price)
+   * Diagnosing diseases from medical images
 
----
+   ---
 
-### 🔹 **2. Unsupervised Learning**
+   ### 🔹 **2. Unsupervised Learning**
 
-**Definition:**
-The algorithm learns patterns or structures from **unlabeled data** — there are no correct answers provided.
+   **Definition:**
+   The algorithm learns patterns or structures from **unlabeled data** — there are no correct answers provided.
 
-**Goal:**
-Discover hidden structure or groupings in data.
+   **Goal:**
+   Discover hidden structure or groupings in data.
 
-**Example:**
+   **Example:**
 
-* **Customer Segmentation**
+   * **Customer Segmentation**
 
-  * You have customer purchase data but no labels.
-  * The model clusters customers into segments based on behavior (e.g., frequent shoppers, bargain hunters).
+     * You have customer purchase data but no labels.
+     * The model clusters customers into segments based on behavior (e.g., frequent shoppers, bargain hunters).
 
-**Other Examples:**
+   **Other Examples:**
 
-* Grouping similar news articles (topic clustering)
-* Reducing the dimensions of large datasets (e.g., PCA for visualization)
+   * Grouping similar news articles (topic clustering)
+   * Reducing the dimensions of large datasets (e.g., PCA for visualization)
 
----
+   ---
 
-### 🔹 **3. Reinforcement Learning**
+   ### 🔹 **3. Reinforcement Learning**
 
-**Definition:**
-An agent learns to make decisions by interacting with an environment. It receives **rewards or penalties** based on its actions.
+   **Definition:**
+   An agent learns to make decisions by interacting with an environment. It receives **rewards or penalties** based on its actions.
 
-**Goal:**
-Maximize cumulative reward over time.
+   **Goal:**
+   Maximize cumulative reward over time.
 
-**Example:**
+   **Example:**
 
-* **Playing a Video Game**
+   * **Playing a Video Game**
 
-  * The agent (player) makes moves (actions).
-  * If it wins a level → gets a reward.
-  * If it loses a life → gets a penalty.
-  * It learns which strategies lead to higher scores.
+     * The agent (player) makes moves (actions).
+     * If it wins a level → gets a reward.
+     * If it loses a life → gets a penalty.
+     * It learns which strategies lead to higher scores.
 
-**Other Examples:**
+   **Other Examples:**
 
-* Teaching a robot to walk
-* Self-driving cars learning to navigate safely
-* Stock trading agents learning profitable strategies
-
+   * Teaching a robot to walk
+   * Self-driving cars learning to navigate safely
+   * Stock trading agents learning profitable strategies
 
 </details>
-
-
 <details>
 <summary>
 3. Q: What distinguishes regression tasks from classification tasks?
 </summary>
-A: Regression predicts continuous numerical values, while classification predicts discrete categories or labels.
 
-### 🔹 **Regression vs. Classification**
+   A: Regression predicts continuous numerical values, while classification predicts discrete categories or labels.
 
-| Aspect               | **Regression**                   | **Classification**                            |
-| -------------------- | -------------------------------- | --------------------------------------------- |
-| **Output Type**      | Continuous numeric value         | Discrete class or category                    |
-| **Goal**             | Predict *how much* or *how many* | Predict *which category* something belongs to |
-| **Example Question** | "What will the house price be?"  | "Is this email spam or not?"                  |
+   ### 🔹 **Regression vs. Classification**
 
----
+   | Aspect               | **Regression**                   | **Classification**                            |
+   | -------------------- | -------------------------------- | --------------------------------------------- |
+   | **Output Type**      | Continuous numeric value         | Discrete class or category                    |
+   | **Goal**             | Predict *how much* or *how many* | Predict *which category* something belongs to |
+   | **Example Question** | "What will the house price be?"  | "Is this email spam or not?"                  |
 
-### 🔹 **Regression – Example**
+   ---
 
-**Task:** Predict house prices
+   ### 🔹 **Regression – Example**
 
-* **Input (features):** square footage, number of rooms, location
-* **Output:** price in dollars (e.g., **\$250,000**, **\$305,500**)
-* **Why Regression?** The output is a continuous value, not a fixed set of categories.
+   **Task:** Predict house prices
 
-🧠 Common algorithms used:
+   * **Input (features):** square footage, number of rooms, location
+   * **Output:** price in dollars (e.g., **\$250,000**, **\$305,500**)
+   * **Why Regression?** The output is a continuous value, not a fixed set of categories.
 
-* Linear Regression
-* Decision Trees (for regression)
-* Random Forest Regressor
+   🧠 Common algorithms used:
 
----
+   * Linear Regression
+   * Decision Trees (for regression)
+   * Random Forest Regressor
 
-### 🔹 **Classification – Example**
+   ---
 
-**Task:** Email spam detection
+   ### 🔹 **Classification – Example**
 
-* **Input (features):** email content, sender, subject line
-* **Output:** class label (e.g., **spam** or **not spam**)
-* **Why Classification?** The output belongs to a fixed set of classes.
+   **Task:** Email spam detection
 
-🧠 Common algorithms used:
+   * **Input (features):** email content, sender, subject line
+   * **Output:** class label (e.g., **spam** or **not spam**)
+   * **Why Classification?** The output belongs to a fixed set of classes.
 
-* Logistic Regression
-* Decision Trees (for classification)
-* Support Vector Machines (SVM)
+   🧠 Common algorithms used:
 
----
+   * Logistic Regression
+   * Decision Trees (for classification)
+   * Support Vector Machines (SVM)
 
-### 🔍 Quick Check:
+   ---
 
-| Question                                | Task Type      |
-| --------------------------------------- | -------------- |
-| Will this tumor be benign or malignant? | Classification |
-| What will the temperature be tomorrow?  | Regression     |
-| Is this photo of a cat or a dog?        | Classification |
-| How many likes will this post get?      | Regression     |   
+   ### 🔍 Quick Check:
+
+   | Question                                | Task Type      |
+   | --------------------------------------- | -------------- |
+   | Will this tumor be benign or malignant? | Classification |
+   | What will the temperature be tomorrow?  | Regression     |
+   | Is this photo of a cat or a dog?        | Classification |
+   | How many likes will this post get?      | Regression     |   
+
 </details>
-
-
-
+<details>
+<summary>
 4. Q: What roles do features and labels play in a supervised-learning pipeline?
+</summary>
+
    A: Features are the input variables used for making predictions, and labels are the target values the model aims to predict.
    
    ### 🔹 **Features**
@@ -224,8 +225,12 @@ A: Regression predicts continuous numerical values, while classification predict
    * **Label** = whether the email is spam or not
    * The model learns what features make an email likely to be spam.
 
-
+</details>
+<details>
+<summary>
 5. Q: How do gradient-descent algorithms work to optimize model parameters?
+</summary>
+
    A: Gradient descent minimizes a loss function by iteratively adjusting model parameters in the direction that reduces error.
 
    ### 🔹 **What is Gradient Descent?**
@@ -310,8 +315,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | **Stochastic (SGD)** | Uses one data point per update                       |
    | **Mini-batch**       | Uses small subsets of data (common in deep learning) |
 
-
+</details>
+<details>
+<summary>
 6. Q: What are overfitting and underfitting, and how do they manifest in learning curves?
+</summary>
+
    A: Overfitting occurs when a model captures noise instead of the underlying pattern; underfitting happens when a model is too simple. In learning curves, overfitting shows low training error but high validation error, while underfitting shows high error for both.
 
    ### 🔹 What is **Overfitting**?
@@ -378,8 +387,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | Overfitting  | - Simplify the model<br>- Use regularization (L1/L2)<br>- Use more data<br>- Dropout (in deep learning) |
    | Underfitting | - Use a more complex model<br>- Reduce regularization<br>- Add features                                 |
 
-
+</details>
+<details>
+<summary>
 7. Q: What are the pandas Series and DataFrame, and when would you use each?
+</summary>
+
    A: A Series is a one-dimensional labeled array; a DataFrame is a two-dimensional labeled table. Use Series for single-column data and DataFrame for tabular data.
 
    ### 🧩 **1. pandas Series**
@@ -457,8 +470,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | Use case       | Single column or time series | Multi-column datasets       |
    | Analogy        | Single column in Excel       | Full Excel spreadsheet      |
 
-
+</details>
+<details>
+<summary>
 8. Q: How do loc and iloc differ when indexing or slicing data?
+</summary>
+
    A: loc uses labels for indexing, while iloc uses integer positions.
 
 
@@ -532,8 +549,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | `df.loc['a':'b']` | Rows `'a'` to `'b'` inclusive |
    | `df.iloc[0:2]`    | Rows at position 0 and 1      |
 
-
+</details>
+<details>
+<summary>
 9. Q: What strategies can you use to handle missing values in a DataFrame?
+</summary>
+
    A: You can drop missing values, fill them with a constant or statistic (mean/median), or use interpolation or imputation methods.
 
 
@@ -656,8 +677,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | Time series                  | Use forward/backward fill or interpolate                        |
    | Predictive modeling          | Consider advanced imputation (e.g., KNN, regression imputation) |
 
-
+</details>
+<details>
+<summary>
 10. Q: How can pandas be used to read and write CSV, JSON, and Excel files?
+</summary>
+
    A: Use pandas functions like read_csv(), read_json(), read_excel(), and their corresponding to_csv(), to_json(), to_excel() methods.
    
    ## 📥 Reading Files
@@ -737,8 +762,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | JSON   | `pd.read_json()`  | `df.to_json()`  | Works well with structured data |
    | Excel  | `pd.read_excel()` | `df.to_excel()` | Needs `openpyxl` for `.xlsx`    |
 
-
+</details>
+<details>
+<summary>
 11. Q: What steps are involved in text preprocessing (tokenization, stop-word removal, stemming/lemmatization)?
+</summary>
+
    A: Text preprocessing involves tokenizing text into words, removing stop-words (common words), and applying stemming or lemmatization to reduce words to base forms.
 
    Text preprocessing is a **crucial step in Natural Language Processing (NLP)**. It transforms raw text into a cleaner, more structured form so it can be used for machine learning models, especially in **text classification, sentiment analysis, or clustering**.
@@ -887,8 +916,12 @@ A: Regression predicts continuous numerical values, while classification predict
    ['text', 'preprocessing', 'essential', 'nlp', 'task']
    ```
 
-
+</details>
+<details>
+<summary>
 12. Q: What is the bag-of-words representation, and what limitation does it introduce?
+</summary>
+
    A: Bag-of-words represents text as word-frequency vectors, ignoring word order and context.
 
    ### 🧾 What is the Bag-of-Words (BoW) Representation?
@@ -959,8 +992,12 @@ A: Regression predicts continuous numerical values, while classification predict
    * **Word Embeddings**: Word2Vec, GloVe
    * **Transformers**: BERT, GPT embeddings
 
-
+</details>
+<details>
+<summary>
 13. Q: How does cosine similarity measure document similarity?
+</summary>
+
    A: Cosine similarity measures the cosine of the angle between two vectors, indicating their directional similarity regardless of magnitude.
 
    ### 🧮 How Does Cosine Similarity Measure Document Similarity?
@@ -1045,8 +1082,12 @@ A: Regression predicts continuous numerical values, while classification predict
    * Relies on **accurate vector representation** (BoW/TF-IDF/embeddings)
    * Still assumes **independence of terms** (no sequence awareness)
 
-
+</details>
+<details>
+<summary>
 14. Q: How would you describe the goal of sentiment analysis?
+</summary>
+
    A: Sentiment analysis aims to determine the emotional tone or opinion expressed in text, such as positive, negative, or neutral.
 
    ### 🎯 What Is the Goal of Sentiment Analysis?
@@ -1101,8 +1142,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | 👥 Domain Dependency | "Cold" may be bad in food, good in air conditioning |
    | 💬 Mixed Sentiments  | One review may have both praise and criticism       |
 
-
+</details>
+<details>
+<summary>
 15. Q: What is unsupervised learning, and when is it used?
+</summary>
+
    A: Unsupervised learning is used to find patterns in data without labeled outputs, such as in clustering and dimensionality reduction.
 
    ### 🤖 What Is Unsupervised Learning?
@@ -1164,8 +1209,12 @@ A: Regression predicts continuous numerical values, while classification predict
    * Choosing the number of clusters or dimensions is often **heuristic**
    * Sensitive to **scaling**, **initialization**, or **noise**
 
-
+</details>
+<details>
+<summary>
 16. Q: How does the k-means algorithm cluster data, and what does inertia measure?
+</summary>
+
    A: K-means partitions data into k clusters by minimizing intra-cluster variance. Inertia measures the sum of squared distances of samples to their cluster centers.
 
 
@@ -1239,8 +1288,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | Inertia  | Measures within-cluster compactness               |
    | Goal     | Minimize inertia to find tight, balanced clusters |
 
-
+</details>
+<details>
+<summary>
 17. Q: What is the “elbow method” for choosing K in k-means?
+</summary>
+
    A: The elbow method involves plotting inertia against K and identifying the 'elbow point' where additional clusters yield diminishing returns.
 
    ### 📍 What Is the “Elbow Method” in K-Means?
@@ -1299,8 +1352,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | Elbow Point  | Where adding more clusters yields little gain in clustering  |
    | Goal         | Choose K that balances **model accuracy** and **simplicity** |
 
-
+</details>
+<details>
+<summary>
 18. Q: How does agglomerative hierarchical clustering work, and what are linkage criteria?
+</summary>
+
    A: Agglomerative clustering merges clusters based on a linkage criterion (e.g., single, complete, average) that defines inter-cluster distance.
 
    ### 🧩 How Does Agglomerative Hierarchical Clustering Work?
@@ -1361,8 +1418,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | Linkage criteria         | Methods to measure distance between clusters            |
    | Common linkages          | Single, Complete, Average, Ward’s                       |
 
-
+</details>
+<details>
+<summary>
 19. Q: What is a dendrogram, and how do you interpret its cluster cuts?
+</summary>
+
    A: A dendrogram is a tree diagram showing hierarchical cluster merges. Cutting it at a specific height reveals cluster groupings.
 
    ### 🌳 What Is a Dendrogram?
@@ -1411,8 +1472,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | Cutting the dendrogram | Horizontal cut at specific height to get clusters |
    | Number of clusters     | Number of branches the cut line intersects        |
 
-
+</details>
+<details>
+<summary>
 20. Q: How does the DBSCAN algorithm define core, border, and noise points?
+</summary>
+
    A: Core points have at least minPts neighbors within ε. Border points are near core points but lack enough neighbors. Noise points are neither.
 
    ### 🌀 How Does DBSCAN Define Core, Border, and Noise Points?
@@ -1462,8 +1527,12 @@ A: Regression predicts continuous numerical values, while classification predict
 
    ---
 
-
+</details>
+<details>
+<summary>
 21. Q: What roles do ε (eps) and minPts play in DBSCAN?
+</summary>
+
    A: ε defines the radius for neighborhood search; minPts is the minimum number of points required to form a dense region.
 
    DBSCAN clustering relies heavily on two key parameters: **ε (epsilon)** and **minPts**. They define how clusters are formed based on density.
@@ -1519,8 +1588,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | **ε (eps)** | Radius to search for neighbors        | Neighborhood size              |
    | **minPts**  | Minimum points to form a dense region | Density threshold for clusters |
 
-
+</details>
+<details>
+<summary>
 22. Q: How does Mean-Shift locate cluster centers, and what parameter controls its behavior?
+</summary>
+
    A: Mean-Shift shifts data points toward the mode of the data distribution using a kernel. The bandwidth parameter controls the search window size.
 
    **Mean-Shift** is a **density-based clustering algorithm** that finds clusters by locating the **modes (peaks) of the data density**.
@@ -1564,8 +1637,12 @@ A: Regression predicts continuous numerical values, while classification predict
    * The window moves uphill towards the highest density point (mode).
    * Each hilltop found is a cluster center.
 
-
+</details>
+<details>
+<summary>
 23. Q: What is Principal Component Analysis, and what does “explained variance” mean?
+</summary>
+
    A: PCA reduces dimensionality by projecting data onto principal components. Explained variance quantifies the amount of variance captured by each component.
 
    **Principal Component Analysis (PCA)** is a **dimensionality reduction technique** that transforms high-dimensional data into a lower-dimensional space while preserving as much variability (information) as possible.
@@ -1590,8 +1667,12 @@ A: Regression predicts continuous numerical values, while classification predict
    * Helps decide **how many principal components to keep** to effectively reduce dimensionality.
    * For example, if the first 2 components explain 90% of the variance, you can reduce your data to 2D with minimal information loss.
 
-
+</details>
+<details>
+<summary>
 24. Q: How do you obtain principal components from the covariance matrix?
+</summary>
+
    A: Principal components are the eigenvectors of the covariance matrix, ordered by the magnitude of their eigenvalues.
 
    ### How Do You Obtain Principal Components from the Covariance Matrix?
@@ -1653,8 +1734,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | Sort & Select       | Pick eigenvectors with largest eigenvalues    |
    | Project Data        | Transform data onto principal components      |
 
-
+</details>
+<details>
+<summary>
 25. Q: When might PCA fail to capture complex structure in data?
+</summary>
+
    A: PCA may fail with non-linear or complex relationships, since it assumes linearity and maximizes only variance.
 
    While **Principal Component Analysis (PCA)** is powerful for linear dimensionality reduction, it has limitations—especially with **complex, nonlinear** data. Here are the key situations where PCA may fail:
@@ -1709,8 +1794,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | Unscaled features            | Skewed component loadings         | StandardScaler before PCA       |
    | Noisy high-variance features | Noise may dominate PCA components | Feature selection, denoising    |
 
-
+</details>
+<details>
+<summary>
 26. Q: What are pre-attentive attributes, and why are they important in visual design?
+</summary>
+
    A: Pre-attentive attributes are visual features (e.g., color, shape, size) processed rapidly by the brain, aiding quick information recognition in visualizations.
 
    **Pre-attentive attributes** are **visual properties** that the human brain can process **automatically and instantly**—**within 200–250 milliseconds**, without conscious effort.
@@ -1757,8 +1846,12 @@ A: Regression predicts continuous numerical values, while classification predict
 
    ---
 
-
+</details>
+<details>
+<summary>
 27. Q: For which relationships would you choose a line chart, bar chart, histogram, or boxplot?
+</summary>
+
    A: Use line charts for trends, bar charts for categorical comparisons, histograms for distributions, and boxplots for data spread and outliers.
 
 
@@ -1813,8 +1906,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | **Histogram** | Distribution of a single variable | Bins group data      | Distribution of income levels     |
    | **Boxplot**   | Spread and outliers in groups     | Quartiles + outliers | Height by gender, scores by class |
 
-
+</details>
+<details>
+<summary>
 28. Q: What makes a color palette suitable for categorical vs. sequential data?
+</summary>
+
    A: Categorical palettes use distinct colors for different groups; sequential palettes use gradients to represent ordered values.
 
 
@@ -1873,8 +1970,12 @@ A: Regression predicts continuous numerical values, while classification predict
 
    ---
 
-
+</details>
+<details>
+<summary>
 29. Q: How does a decision tree split nodes using Gini impurity or information gain?
+</summary>
+
    A: Decision trees split nodes by choosing the feature that maximizes information gain or minimizes Gini impurity, improving homogeneity.
    ### 🌳 How Does a Decision Tree Split Nodes Using Gini Impurity or Information Gain?
 
@@ -1962,7 +2063,12 @@ A: Regression predicts continuous numerical values, while classification predict
 
    The tree evaluates each possible feature and threshold to **minimize impurity or maximize gain** after the split.
 
+</details>
+<details>
+<summary>
 30. Q: What is pruning in decision trees, and why is it necessary?
+</summary>
+
    A: Pruning removes branches that offer little predictive power, reducing overfitting and improving model generalization.
    ### 🌳 What Is Pruning in Decision Trees, and Why Is It Necessary?
 
@@ -2015,8 +2121,12 @@ A: Regression predicts continuous numerical values, while classification predict
 
    * Prune nodes that **reduce complexity without increasing error much**.
 
-
+</details>
+<details>
+<summary>
 31. Q: How does bagging reduce variance when building a Random Forest?
+</summary>
+
    A: Bagging trains multiple models on different data subsets and averages predictions, reducing variance and improving stability.
    ### 🌲 How Does Bagging Reduce Variance in Random Forests?
 
@@ -2061,8 +2171,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | **Variance**       | High (overfits easily) | Low (due to averaging)       |
    | **Generalization** | Risk of overfitting    | More stable predictions      |
 
-
+</details>
+<details>
+<summary>
 32. Q: How is feature importance computed in a Random Forest?
+</summary>
+
    A: Feature importance is calculated by averaging the decrease in impurity (e.g., Gini) across all trees for each feature.
    ### 🌳 How Is Feature Importance Computed in a Random Forest?
 
@@ -2102,8 +2216,12 @@ A: Regression predicts continuous numerical values, while classification predict
    ✅ **Pros**: Less biased, model-agnostic
    ❗ **Cons**: Slower, needs model retraining or re-evaluation
 
-
+</details>
+<details>
+<summary>
 33. Q: What is an artificial neuron, and what role does its activation function play?
+</summary>
+
    A: An artificial neuron processes input via weighted sums. The activation function introduces non-linearity, enabling complex modeling.
    ### 🤖 What Is an Artificial Neuron, and What Role Does Its Activation Function Play?
 
@@ -2161,7 +2279,12 @@ A: Regression predicts continuous numerical values, while classification predict
      * Sentiment analysis
      * Time series forecasting
 
+</details>
+<details>
+<summary>
 34. Q: How does backpropagation use the chain rule to update network weights?
+</summary>
+
    A: Backpropagation computes gradients of the loss function using the chain rule and updates weights to minimize error.
    ### 🔄 How Does Backpropagation Use the Chain Rule to Update Network Weights?
 
@@ -2232,8 +2355,12 @@ A: Regression predicts continuous numerical values, while classification predict
    * **Forward**: Raw materials (input) ➡️ product (output)
    * **Backward**: Customer complaint (loss) ➡️ trace back where the issue originated (which machine = which weight), adjust that machine.
 
-
+</details>
+<details>
+<summary>
 35. Q: What is dropout, and how does it help prevent overfitting in deep networks?
+</summary>
+
    A: Dropout randomly disables neurons during training, forcing the network to learn redundant representations, which improves generalization.
    ### 🧹 What Is Dropout, and How Does It Help Prevent Overfitting in Deep Networks?
 
@@ -2286,8 +2413,12 @@ A: Regression predicts continuous numerical values, while classification predict
    )
    ```
 
-
+</details>
+<details>
+<summary>
 36. Q: What is the purpose of batch normalization during training?
+</summary>
+
    A: Batch normalization standardizes inputs to each layer, speeding up training and improving stability by reducing internal covariate shift.
    ### 🎯 What Is the Purpose of Batch Normalization During Training?
 
@@ -2350,8 +2481,12 @@ A: Regression predicts continuous numerical values, while classification predict
 
    > Like giving every layer a **consistent starting point**, so the network doesn’t have to keep **readjusting** for shifting input distributions.
 
-
+</details>
+<details>
+<summary>
 37. Q: What is the purpose of text preprocessing in a clustering pipeline, and which common steps (e.g. lowercasing, punctuation removal) are involved?
+</summary>
+
    A: Text preprocessing cleans and standardizes raw text so that clustering algorithms can perform effectively. Common steps include lowercasing, punctuation removal, stop-word removal, stemming or lemmatization, and tokenization. These steps reduce noise and ensure consistency in text representation.
    ### ✅ Purpose of Text Preprocessing in a Clustering Pipeline
 
@@ -2406,8 +2541,12 @@ A: Regression predicts continuous numerical values, while classification predict
    | Focus on meaningful words | Improves cluster quality       |
    | Standardize inputs        | Reduces misleading variability |
 
-
+</details>
+<details>
+<summary>
 38. Q: Why do we convert raw text into numeric embeddings before clustering, and what are the pros and cons of different embedding types?
+</summary>
+
    A: Clustering algorithms require numerical input, so we convert text into numeric embeddings like TF-IDF or word embeddings (e.g., Word2Vec, BERT). TF-IDF is simple and interpretable but ignores word context. Word embeddings capture semantic meaning but can be less transparent. Contextual embeddings like BERT offer rich representations but are computationally expensive.
    Here is a complete answer to your question, along with other previous answers compiled into a text file.
 
@@ -2464,8 +2603,12 @@ A: Regression predicts continuous numerical values, while classification predict
    * Think of **embeddings** as **coordinates in a multi-dimensional space**, where **similar texts** are **closer together**.
    * The **better the embedding**, the **better the clustering** reflects **real meaning**.
 
-
+</details>
+<details>
+<summary>
 39. Q: How does k-means clustering work on text embeddings, and why is Euclidean distance typically used?
+</summary>
+
    A: K-means clusters embeddings by minimizing the Euclidean distance between points and their assigned cluster centers. Euclidean distance works well in continuous vector spaces like TF-IDF or word embeddings, where geometric proximity reflects semantic similarity.
    Here’s a clear, well-structured answer to your question:
 
@@ -2526,7 +2669,12 @@ A: Regression predicts continuous numerical values, while classification predict
 
    ---
 
+</details>
+<details>
+<summary>
 40. Q: What does the “inertia” value in k-means represent, and how does it relate to cluster compactness?
+</summary>
+
    A: Inertia measures the sum of squared distances between each point and its assigned cluster center. Lower inertia indicates more compact and well-defined clusters.
    ### ✅ What Does the “Inertia” Value in K-Means Represent, and How Does It Relate to Cluster Compactness?
 
@@ -2583,9 +2731,12 @@ A: Regression predicts continuous numerical values, while classification predict
 
    ---
 
-
-
+</details>
+<details>
+<summary>
 41. Q: Explain the elbow method for choosing the number of clusters K, and how plotting inertia vs. K helps.
+</summary>
+
    A: The elbow method involves plotting inertia against different values of K. The optimal K is found at the 'elbow' point of the curve, where inertia begins to decrease at a slower rate, indicating diminishing returns from adding more clusters.
    Here’s a clear, structured answer to your question:
 
@@ -2663,8 +2814,12 @@ A: Regression predicts continuous numerical values, while classification predict
 
    **K=3** shows the “elbow.”
 
-
+</details>
+<details>
+<summary>
 42. Q: How can you use the first and second finite differences of the inertia list to pinpoint the optimal K more rigorously?
+</summary>
+
    A: The first difference measures the change in inertia, while the second difference tracks the rate of change of that decrease. The optimal K often appears where the second difference drops significantly, marking the point of greatest curvature in the inertia plot.
    Here is a clear, structured answer to your question:
 
@@ -2725,8 +2880,11 @@ A: Regression predicts continuous numerical values, while classification predict
    * A **big drop followed by smaller drops** causes a **peak in second differences**, signaling the elbow.
 
 
-
+</details>
+<details>
+<summary>
 43. Q: What impact does the choice of distance (or similarity) metric have on the results of text clustering?
+</summary>
    A: The distance metric defines how similarity is measured between text embeddings. Metrics like Euclidean, cosine, or Manhattan distance can yield different cluster shapes and boundaries. Choosing the right metric depends on the embedding type and data characteristics.
    Here's a complete answer to your question:
 
@@ -2776,8 +2934,11 @@ A: Regression predicts continuous numerical values, while classification predict
 
    > 📌 For **TF-IDF vectors**, prefer **cosine similarity**; for **dense semantic embeddings**, **Euclidean distance** is usually fine.
 
-
+</details>
+<details>
+<summary>
 44. Q: What impact does the choice of distance (or similarity) metric have on the results of text clustering?
+</summary>
    A: Different metrics capture different aspects of similarity. For example, cosine similarity focuses on orientation rather than magnitude, which is often better for sparse data like TF-IDF vectors. Choosing the wrong metric can lead to misleading or poor clustering results.
 
 
@@ -2813,3 +2974,5 @@ A: Regression predicts continuous numerical values, while classification predict
    * Selecting an **appropriate metric for your data representation** (TF-IDF, embeddings, binary vectors) is critical for meaningful, interpretable clustering results.
 
 
+
+</details>
